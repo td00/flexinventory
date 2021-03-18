@@ -11,7 +11,7 @@
  <hr>
   <div class="container">
   	<footer>
-        <p>Powered by <a href="http://www.php-einfach.de" target="_blank">PHP-Einfach.de</a></p>
+        <p>Find me on <a href="https://github.com/td00/flexinventory" target="_blank">GitHub (td00/flexinventory)</a></p>
       </footer>
    </div> 
 
