@@ -25,3 +25,22 @@ CREATE TABLE `securitytokens` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
+CREATE TABLE IF NOT EXISTS `inventory` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `flexuuid` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `anzahl` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `soll_min_anzahl` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `typ` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `rx` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tx` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `tray_ids` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `range` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `industrial` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `singlemulti` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `steckertyp` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `bezeichnung` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `zulauf_anzahl` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `zusatz`varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `kommentar` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`id`), UNIQUE (`flexuuid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
